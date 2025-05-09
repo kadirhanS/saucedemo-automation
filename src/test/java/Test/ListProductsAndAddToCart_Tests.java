@@ -50,7 +50,7 @@ public class ListProductsAndAddToCart_Tests extends BaseTest {
         }
 
         Assert.assertTrue(saucedDemo.saucedDemo_ShoppingCartBadge.getText().isEmpty(),
-                    "halen daha 1 olarak gözüküyor");
+                    "still shows as 1");
         System.out.println("After remove: "+saucedDemo.saucedDemo_ShoppingCartBadge.getText());
 
 
