@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="1" parallel="false" preserve-order="true">
+
+    <!-- Login Tests -->
+    <test name="Login Tests">
+        <classes>
+            <class name="Test.LogIn_Tests">
+                <methods>
+                    <include name="TC01_ValidLogIn_Test"/>
+                    <include name="TC02_InvalidLogIn_Test"/>
+                    <include name="TC03_LoginWithEmptyFields_Test"/>
+                    <include name="TC04_LockedOutUserLogIn_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Logout Test -->
+    <test name="Logout Tests">
+        <classes>
+            <class name="Test.LogOut_Tests">
+                <methods>
+                    <include name="TC13_LogOutFromMenu"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Product Display & Cart Tests -->
+    <test name="Display And Cart Tests">
+        <classes>
+            <class name="Test.ListProductsAndAddToCart_Tests">
+                <methods>
+                    <include name="TC05_ProductCountVerification"/>
+                    <include name="TC06_AddToCard"/>
+                    <include name="TC07_RemoveItemsFromCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Checkout Tests -->
+    <test name="Checkout Tests">
+        <classes>
+            <class name="Test.CheckOut_Tests">
+                <methods>
+                    <include name="TC08_AddProductToCart_StartCheckout"/>
+                    <include name="TC09_CheckOutEmptyFields"/>
+                    <include name="TC10_ComplateOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Sorting Tests -->
+    <test name="Sorting Tests">
+        <classes>
+            <class name="Test.Sorting_Test">
+                <methods>
+                    <include name="TC11_SortingItems"/>
+                    <include name="TC12_Name_Z_To_A"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Navigation Test -->
+    <test name="Navigation Tests">
+        <classes>
+            <class name="Test.Link_Control_Tests">
+                <methods>
+                    <include name="TC14_AboutLink_isBlank"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
+
+

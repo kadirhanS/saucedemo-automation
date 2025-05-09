@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Suite" verbose="1" parallel="tests" thread-count="2" preserve-order="true">
+
+    <!-- All Chrome Tests -->
+    <test name="Chrome - All Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Test.LogIn_Tests"/>
+            <class name="Test.LogOut_Tests"/>
+            <class name="Test.ListProductsAndAddToCart_Tests"/>
+            <class name="Test.CheckOut_Tests"/>
+            <class name="Test.Sorting_Test"/>
+            <class name="Test.Link_Control_Tests"/>
+        </classes>
+    </test>
+
+    <!-- All Firefox Tests -->
+<!--    <test name="Firefox - All Tests">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="Test.LogIn_Tests"/>-->
+<!--            <class name="Test.LogOut_Tests"/>-->
+<!--            <class name="Test.ListProductsAndAddToCart_Tests"/>-->
+<!--            <class name="Test.CheckOut_Tests"/>-->
+<!--            <class name="Test.Sorting_Test"/>-->
+<!--            <class name="Test.Link_Control_Tests"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <!-- All Edge Tests -->
+    <test name="Edge - All Tests">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="Test.LogIn_Tests"/>
+            <class name="Test.LogOut_Tests"/>
+            <class name="Test.ListProductsAndAddToCart_Tests"/>
+            <class name="Test.CheckOut_Tests"/>
+            <class name="Test.Sorting_Test"/>
+            <class name="Test.Link_Control_Tests"/>
+        </classes>
+    </test>
+
+</suite>
